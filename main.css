@@ -31,14 +31,12 @@ body {
   font-style: italic;
 }
   
- /*Large screen styles first - Avoid*/
-.body, .wapper {
-  width: 50%;
-  float: left;
-}
-@media screen and (max-width: 40.5em) {
-  .body, .wrapper {
-    width: auto;
-    float: none;
-  }
+/*responsive style*/
+@media only screen and (max-width: 480px){
+	.wrapper, .author{
+		max-width: 480px;
+	}
+  .body {
+		max-width: 480px;
+	}
 }
